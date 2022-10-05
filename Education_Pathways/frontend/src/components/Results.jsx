@@ -6,6 +6,10 @@ import Col from 'react-bootstrap/Col'
 import './css/Result.css'
 import unstarred from './img/star.png'
 import starred from './img/starred.png'
+<<<<<<< HEAD
+=======
+import API from '../api';
+>>>>>>> e6799f99b009f4c584c5e8822b50d0a8da1f582e
 
 let star;
 
@@ -28,6 +32,7 @@ class Result extends Component{
     this.props.history.push(`/course/details/${this.props.course_code}`, {course_code: this.props.course_code})
   }
   
+<<<<<<< HEAD
   componentDidMount() {
     axios.get(`https://assignment-1-starter-template.herokuapp.com/user/wishlist?username=${this.state.username}`)
     .then(res => {
@@ -44,6 +49,8 @@ class Result extends Component{
 
 
 
+=======
+>>>>>>> e6799f99b009f4c584c5e8822b50d0a8da1f582e
 
   render(){
     return (
